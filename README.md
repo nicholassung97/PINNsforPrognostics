@@ -38,10 +38,19 @@ This proposed physics-based machine learning model will incorporate knowledge th
 
 #### Rules will be imposed as penalty terms in the loss function
 The first rule is that the predicted health index for subsequent cycles cannot increase (this means that the health of the system cannot improve overtime)
-To enforce this rule into the neural network we add Loss Rule 1 as a penalty term into the loss function. How this loss term works is if the mean health index for cycle i+1 is more than the mean health index for cycle i, this indicates that the health index increases and the term in the bracket will be positive (click). 
+To enforce this rule into the neural network we add Loss Rule 1 as a penalty term into the loss function. How this loss term works is if the mean health index for cycle i+1 is more than the mean health index for cycle i, this indicates that the health index increases and the term in the bracket will be positive. 
 
 When passed through the ReLu function, the output will be reflected linearly, and the optimisation process will attempt to reduce this term until it is close to zero. When it does so, the mean predicted health index does not increase anymore. 
-In the event that the mean health index already decreases, the term in the ReLu function will be negative and the loss term will be zero, hence physical consistency is achieved
+In the event that the mean health index already decreases, the term in the ReLu function will be negative and the loss term will be zero, hence physical consistency is achieved.
 
 <img src="https://user-images.githubusercontent.com/84385004/192483106-df011385-9b84-4f8f-806c-fffb0780e3be.png" width="500" height="100" />
-![image](https://user-images.githubusercontent.com/84385004/192483106-df011385-9b84-4f8f-806c-fffb0780e3be.png)
+
+The second rule is that all the predicted health index for the same cycle should be similar. 
+To enforce this rule into the neural network we add Loss Rule 2 as a penalty term into the loss function
+How this loss term works is that it is equal to the mean absolute percentage error between the health index predictions within a cycle and their average value.
+Essentially, a larger mean absolute percentage error will reflect a larger deviation of the health index within the cycle.
+The optimisation process will attempt to reduce this term until it is close to zero hence forcing this physical constraint of a small deviation within each cycle. 
+<img src="https://user-images.githubusercontent.com/84385004/192483765-3c2caff0-e72b-49e3-ba2e-22f4039da9f3.png" width="500" height="100" />
+
+
+
