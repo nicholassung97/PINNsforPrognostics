@@ -60,6 +60,6 @@ In other words, from one cycle to the next, we do not expect the health of the s
 As seen from the inequality formula, if the drop in the mean health index is more than 20 percent, we can bring over the right-hand side term to obtain the following. 
 If this term is positive, it means that the drop is more than 20 percent and when we pass it through the ReLu function, the output will be positive too. The optimisation process will attempt to reduce this term until it is close to zero. When it does so, the mean predicted health index should not decrease by more than 20 percent. 
 
-<img src="https://user-images.githubusercontent.com/84385004/192485962-78e78bb8-f488-41f5-b0a5-23771b3bd47f.png" width="450" height="70" />
+<img src="https://user-images.githubusercontent.com/84385004/192485962-78e78bb8-f488-41f5-b0a5-23771b3bd47f.png" width="450" height="50" />
 
 <img src="https://user-images.githubusercontent.com/84385004/192486112-c9870609-ded5-4765-b509-3c2271eee2ef.png" width="450" height="100" />
