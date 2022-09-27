@@ -4,8 +4,9 @@ We introduce physics-informed neural netwroks for prognostics, which is the engi
 
 Implementation can be accessed here:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/tensorflow2.0.ipynb)
-Full Final Year Report can be accessed here:
 
+Full Final Year Report can be accessed here:
+![hustlin_erd](erd.pdf)
 
 
 ## Methodology
