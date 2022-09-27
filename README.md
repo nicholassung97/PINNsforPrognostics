@@ -71,7 +71,14 @@ If this term is positive, it means that the drop is more than 20 percent and whe
 
 #### Boundary Conditions
 Moving on to the boundary conditions, we take the first cycle to be healthy, hence it will have a health index of 100% and the last cycle to be unhealthy, hence it will have a health index of 10%. The loss term will be mean square error between the predicted value and true value for the first and last cycle.
-![image](https://user-images.githubusercontent.com/84385004/192488207-bdc49ec0-b094-42d4-bf1c-5104309edc95.png)
 
 <img src="https://user-images.githubusercontent.com/84385004/192488207-bdc49ec0-b094-42d4-bf1c-5104309edc95.png" width="600" height="100" />
 
+#### Overall Physics Based Machine Learning Framework
+Ultimately, we can obtain our overall loss function by adding all the loss terms as shown in this framework. 
+The 20 most distinctive features and cycles are input to predict the health index which should then be constrained by the three rules and the boundary conditions
+
+![image](https://user-images.githubusercontent.com/84385004/192488773-d681e9bc-3252-45ff-9ef6-7d0712d0c872.png)
+
+
+ 
