@@ -32,13 +32,15 @@ In the first stage, the feature will be used as input into the physics-based mac
 
 ### Physics-Based Machine Learning framework
 This proposed physics-based machine learning model will incorporate knowledge through the following 3 rules of the health index:
-Predicted Health Index value for the subsequent cycle cannot increase
-Deviation of the predicted Health Index value within each cycle should be small 
-Drop in the predicted Health Index for the subsequent cycle is small.
+1. Predicted Health Index value for the subsequent cycle cannot increase
+2. Deviation of the predicted Health Index value within each cycle should be small 
+3. Drop in the predicted Health Index for the subsequent cycle is small.
 
+#### Rules will be imposed as penalty terms in the loss function
+The first rule is that the predicted health index for subsequent cycles cannot increase (this means that the health of the system cannot improve overtime)
+To enforce this rule into the neural network we add Loss Rule 1 as a penalty term into the loss function. How this loss term works is if the mean health index for cycle i+1 is more than the mean health index for cycle i, this indicates that the health index increases and the term in the bracket will be positive (click). 
 
-Unlike the kinematics example where the physical laws were imposed by adding a pde residual as penalty into the loss function, 
-The imposition of penalty terms here are more complicated and I will explain them in the next few slides
+When passed through the ReLu function, the output will be reflected linearly, and the optimisation process will attempt to reduce this term until it is close to zero. When it does so, the mean predicted health index does not increase anymore. 
+In the event that the mean health index already decreases, the term in the ReLu function will be negative and the loss term will be zero, hence physical consistency is achieved
 
-
-#### Rule
+<img src="https://user-images.githubusercontent.com/84385004/192482434-dff4a295-544b-4c98-abff-94fde432b841.png" width="300" height="200" />
