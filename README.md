@@ -26,4 +26,8 @@ The last step is to use the features to predict the remaining useful life.
 In this project, prediction was achieved through a two-stage modelling process with health index as an intermediary. The health index represents the state of health of the system. 
 In the first stage, the feature will be used as input into the physics-based machine learning framework to predict the Health Index (HI) of the system. This framework will be the main contribution of this project and it was build using tensorflow 2.0. In the second stage, the health index is mapped to the predicted RUL, after which the final RUL prediction is produced through an ensemble approach
 
+Image of Feature to RUL Prediction
+
+### Physics-Based Machine Learning framework
+
 
