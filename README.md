@@ -5,6 +5,7 @@ We introduce physics-informed neural netwroks for prognostics, which is the engi
 ## Methodology
 In general, there are a series of steps taken to predicting the remaining useful life of a system. 
 
+### Data Collection and Pre-processing
 The first step is data collection and pre-processing where raw data is cleaned to ensure its accuracy, completeness and consistency. Raw sensor data were collected by Professor Wesley and his team from the University of Tennessee. They conducted thermal ageing on eight induction motors and collected the following 11 channels of raw signals.
 - 3 phases of current (Current 1, 2, 3)​
 - 3 phases of voltage (Voltage 1, 2, 3)​
@@ -13,6 +14,7 @@ The first step is data collection and pre-processing where raw data is cleaned t
 - Thermocouple signal (temperature) ​
 - Acoustic sensor signal (sound)
 
+### Feature Engineering (Feature Extraction and Feautre Selection)
 The second step is feature engineering which can be broken down into two sub steps, mainly (1) feature extraction which converts the pre-processed raw data into features which can explain the data better and (2) feature selection which ranks the features based on its distinctiveness and extracts the most important features that are relevant for the problem. 
 The pre-processing and feature extraction stages were conducted by Yang Feng and his team by substituting the missing values with values from the previous cycle and applying 11 statistical indicators as shown in the table to each of the 11 channels of raw data to obtain 121 features.
 
@@ -23,7 +25,7 @@ Having the features created, I proceeded to do feature selection to rank 121 fea
 
 <img src="https://user-images.githubusercontent.com/84385004/192479845-c7a7d41c-3dab-47ad-a32e-a6066c7d473a.png" width="600" height="300" />
 
-
+### Feature to RUL prediction
 The last step is to use the features to predict the remaining useful life. 
 In this project, prediction was achieved through a two-stage modelling process with health index as an intermediary. The health index represents the state of health of the system. 
 In the first stage, the feature will be used as input into the physics-based machine learning framework to predict the Health Index (HI) of the system. This framework will be the main contribution of this project and it was build using tensorflow 2.0. In the second stage, the health index is mapped to the predicted RUL, after which the final RUL prediction is produced through an ensemble approach.
