@@ -16,16 +16,17 @@ The first step is data collection and pre-processing where raw data is cleaned t
 The second step is feature engineering which can be broken down into two sub steps, mainly (1) feature extraction which converts the pre-processed raw data into features which can explain the data better and (2) feature selection which ranks the features based on its distinctiveness and extracts the most important features that are relevant for the problem. 
 The pre-processing and feature extraction stages were conducted by Yang Feng and his team by substituting the missing values with values from the previous cycle and applying 11 statistical indicators as shown in the table to each of the 11 channels of raw data to obtain 121 features.
 
-![image](https://user-images.githubusercontent.com/84385004/192479900-efd1c076-d5c1-4460-b5cd-f18edb63cee8.png)
+<img src="https://user-images.githubusercontent.com/84385004/192479900-efd1c076-d5c1-4460-b5cd-f18edb63cee8.png" width="500" height="400" />
+
 
 Having the features created, I proceeded to do feature selection to rank 121 features based on its distinctiveness and extracted the 20 most important features. The method used was fishers ratio which measures the discriminating power between a healthy class and an unhealthy class. We assumed that the motor was healthy in the first four cycles and unhealthy in the last four cycles. Essentially, the larger the ratio, the more the feature has changed when the motor degrades from a healthy to an unhealthy state, which makes the feature more distinctive.
 
-<img src="https://user-images.githubusercontent.com/84385004/192479845-c7a7d41c-3dab-47ad-a32e-a6066c7d473a.png" width="500" height="300" />
+<img src="https://user-images.githubusercontent.com/84385004/192479845-c7a7d41c-3dab-47ad-a32e-a6066c7d473a.png" width="600" height="300" />
 
 
 The last step is to use the features to predict the remaining useful life. 
 In this project, prediction was achieved through a two-stage modelling process with health index as an intermediary. The health index represents the state of health of the system. 
-In the first stage, the feature will be used as input into the physics-based machine learning framework to predict the Health Index (HI) of the system. This framework will be the main contribution of this project and it was build using tensorflow 2.0. In the second stage, the health index is mapped to the predicted RUL, after which the final RUL prediction is produced through an ensemble approach
+In the first stage, the feature will be used as input into the physics-based machine learning framework to predict the Health Index (HI) of the system. This framework will be the main contribution of this project and it was build using tensorflow 2.0. In the second stage, the health index is mapped to the predicted RUL, after which the final RUL prediction is produced through an ensemble approach.
 
 ![image](https://user-images.githubusercontent.com/84385004/192479684-db6e33b7-b2c9-4136-9b6a-7fcf47e7a096.png)
 
@@ -51,7 +52,7 @@ How this loss term works is that it is equal to the mean absolute percentage err
 Essentially, a larger mean absolute percentage error will reflect a larger deviation of the health index within the cycle.
 The optimisation process will attempt to reduce this term until it is close to zero hence forcing this physical constraint of a small deviation within each cycle. 
 
-<img src="https://user-images.githubusercontent.com/84385004/192483765-3c2caff0-e72b-49e3-ba2e-22f4039da9f3.png" width="500" height="100" />
+<img src="https://user-images.githubusercontent.com/84385004/192484683-dbb74533-910b-4381-81a5-238cc7179527.pn" width="500" height="100" />
 
-
+Where t represents the data number within a cycle, n represents the last data set in the cycle.
 
