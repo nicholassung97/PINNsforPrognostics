@@ -81,4 +81,11 @@ The 20 most distinctive features and cycles are input to predict the health inde
 ![image](https://user-images.githubusercontent.com/84385004/192488773-d681e9bc-3252-45ff-9ef6-7d0712d0c872.png)
 
 
+#### Ensemble Approach: Train and Tested with same engine
+Using this physics based machine learning framework, we used the 20 features and cycles from each of the 8 engines to train 8 separate health index prediction models. When we ran the features of each engine through their corresponding model. We found that all the engines show a similar degradation trend which illustrates (1) a gradual decrease in health index, (2) the small deviation in Health Index for the same cycle and (3) the boundary conditions are met  where the first cycle is 100% healthy and last cycle is 10% healthy. So essentially, ALL the rules and boundary conditions are abided by
+
+![image](https://user-images.githubusercontent.com/84385004/192489388-7078a39e-6882-40ed-b8f8-b168e8fda08f.png)
+
+
+
  
