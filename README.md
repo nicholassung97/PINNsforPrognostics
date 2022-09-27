@@ -20,7 +20,8 @@ The pre-processing and feature extraction stages were conducted by Yang Feng and
 
 Having the features created, I proceeded to do feature selection to rank 121 features based on its distinctiveness and extracted the 20 most important features. The method used was fishers ratio which measures the discriminating power between a healthy class and an unhealthy class. We assumed that the motor was healthy in the first four cycles and unhealthy in the last four cycles. Essentially, the larger the ratio, the more the feature has changed when the motor degrades from a healthy to an unhealthy state, which makes the feature more distinctive.
 
-![image](https://user-images.githubusercontent.com/84385004/192479845-c7a7d41c-3dab-47ad-a32e-a6066c7d473a.png)
+<img src="https://user-images.githubusercontent.com/84385004/192479845-c7a7d41c-3dab-47ad-a32e-a6066c7d473a.png" width="400" height="30" />
+
 
 The last step is to use the features to predict the remaining useful life. 
 In this project, prediction was achieved through a two-stage modelling process with health index as an intermediary. The health index represents the state of health of the system. 
