@@ -8,7 +8,7 @@ Implementation can be accessed here:
 Full Final Year Report can be accessed here:
 
 
-[![Final Report](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png| width=100)](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/FYP_B062_NicholasSung.pdf)
+[![Final Report](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png | width=100)](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/FYP_B062_NicholasSung.pdf)
 
 
 ## Methodology
