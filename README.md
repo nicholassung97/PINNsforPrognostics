@@ -101,6 +101,7 @@ The second error metric used was the mean absolute percentage error which is a m
 
 Similar to root mean square error, the RUL prediction using physics-based machine learning out-performs the direct method for most engines and on average, reduces the mean absolute percentage error by 33.6%.
 
+![image](https://user-images.githubusercontent.com/84385004/192490838-e10ffa5e-0bd8-463d-8865-32abc4c54e4f.png)
 
 
 
