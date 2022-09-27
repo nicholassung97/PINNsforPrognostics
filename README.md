@@ -29,5 +29,9 @@ In the first stage, the feature will be used as input into the physics-based mac
 Image of Feature to RUL Prediction
 
 ### Physics-Based Machine Learning framework
+This proposed physics-based machine learning model will incorporate knowledge through the following 3 rules of the health index as shown. 
+Unlike the kinematics example where the physical laws were imposed by adding a pde residual as penalty into the loss function, 
+The imposition of penalty terms here are more complicated and I will explain them in the next few slides
+![image](https://user-images.githubusercontent.com/84385004/192479064-7c837744-aa21-461a-b5d3-6e3582a3bf3f.png)
 
 #### Rule
