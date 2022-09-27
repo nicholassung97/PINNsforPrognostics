@@ -7,8 +7,7 @@ Implementation can be accessed here:
 
 Full Final Year Report can be accessed here:
 
-
-[![Final Report](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png =250x250)](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/FYP_B062_NicholasSung.pdf)
+[![Final Report]<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png" width="48">](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/FYP_B062_NicholasSung.pdf)
 
 
 ## Methodology
@@ -112,10 +111,3 @@ Similar to root mean square error, the RUL prediction using physics-based machin
 
 ![image](https://user-images.githubusercontent.com/84385004/192490838-e10ffa5e-0bd8-463d-8865-32abc4c54e4f.png)
 
-
-
-
-
-
-
- 
