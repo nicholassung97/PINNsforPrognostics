@@ -52,7 +52,7 @@ How this loss term works is that it is equal to the mean absolute percentage err
 Essentially, a larger mean absolute percentage error will reflect a larger deviation of the health index within the cycle.
 The optimisation process will attempt to reduce this term until it is close to zero hence forcing this physical constraint of a small deviation within each cycle. 
 
-<img src="https://user-images.githubusercontent.com/84385004/192484846-17f43fd5-8d78-4695-ab9e-778223601467.png" width="500" height="100" />
+<img src="https://user-images.githubusercontent.com/84385004/192484846-17f43fd5-8d78-4695-ab9e-778223601467.png" width="700" height="100" />
 
 Where t represents the data number within a cycle, n represents the last data set in the cycle.
 
