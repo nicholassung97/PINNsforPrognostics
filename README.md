@@ -30,4 +30,4 @@ Image of Feature to RUL Prediction
 
 ### Physics-Based Machine Learning framework
 
-
+#### Rule
