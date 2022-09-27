@@ -91,6 +91,20 @@ With the 8 models trained, the features from one test motor will run through the
 
 ![image](https://user-images.githubusercontent.com/84385004/192489928-b679fcae-8569-41f8-81db-7a2b9084f7db.png)
 
+## Results
+To gauge the performance of this method, we utilise two error metrics and compare them with the direct method. The direct method maps features directly to the RUL during training. The first error metric is root mean square error which measures the differences between the true RUL and the predicted RUL for every cycle
+What we observe is that RUL prediction using physics-based machine learning out-performs the direct method for most engines and on average, reduces the root mean square error by 31.5%.
+
+![image](https://user-images.githubusercontent.com/84385004/192490645-fb844a15-8ca0-4b6a-b38e-132aa7d4f629.png)
+
+The second error metric used was the mean absolute percentage error which is a measure of prediction accuracy. 
+
+Similar to root mean square error, the RUL prediction using physics-based machine learning out-performs the direct method for most engines and on average, reduces the mean absolute percentage error by 33.6%.
+
+
+
+
+
 
 
 
