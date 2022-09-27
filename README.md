@@ -43,4 +43,5 @@ To enforce this rule into the neural network we add Loss Rule 1 as a penalty ter
 When passed through the ReLu function, the output will be reflected linearly, and the optimisation process will attempt to reduce this term until it is close to zero. When it does so, the mean predicted health index does not increase anymore. 
 In the event that the mean health index already decreases, the term in the ReLu function will be negative and the loss term will be zero, hence physical consistency is achieved
 
-<img src="https://user-images.githubusercontent.com/84385004/192482434-dff4a295-544b-4c98-abff-94fde432b841.png" width="500" height="400" />
+<img src="https://user-images.githubusercontent.com/84385004/192483106-df011385-9b84-4f8f-806c-fffb0780e3be.png" width="500" height="400" />
+![image](https://user-images.githubusercontent.com/84385004/192483106-df011385-9b84-4f8f-806c-fffb0780e3be.png)
