@@ -68,3 +68,10 @@ If this term is positive, it means that the drop is more than 20 percent and whe
 <img src="https://user-images.githubusercontent.com/84385004/192485962-78e78bb8-f488-41f5-b0a5-23771b3bd47f.png" width="450" height="50" />
 
 <img src="https://user-images.githubusercontent.com/84385004/192486112-c9870609-ded5-4765-b509-3c2271eee2ef.png" width="450" height="100" />
+
+#### Boundary Conditions
+Moving on to the boundary conditions, we take the first cycle to be healthy, hence it will have a health index of 100% and the last cycle to be unhealthy, hence it will have a health index of 10%. The loss term will be mean square error between the predicted value and true value for the first and last cycle.
+![image](https://user-images.githubusercontent.com/84385004/192488207-bdc49ec0-b094-42d4-bf1c-5104309edc95.png)
+
+<img src="https://user-images.githubusercontent.com/84385004/192488207-bdc49ec0-b094-42d4-bf1c-5104309edc95.png" width="600" height="100" />
+
