@@ -50,6 +50,7 @@ To enforce this rule into the neural network we add Loss Rule 2 as a penalty ter
 How this loss term works is that it is equal to the mean absolute percentage error between the health index predictions within a cycle and their average value.
 Essentially, a larger mean absolute percentage error will reflect a larger deviation of the health index within the cycle.
 The optimisation process will attempt to reduce this term until it is close to zero hence forcing this physical constraint of a small deviation within each cycle. 
+
 <img src="https://user-images.githubusercontent.com/84385004/192483765-3c2caff0-e72b-49e3-ba2e-22f4039da9f3.png" width="500" height="100" />
 
 
