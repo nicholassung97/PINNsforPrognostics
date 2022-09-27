@@ -37,6 +37,7 @@ This proposed physics-based machine learning model will incorporate knowledge th
 3. Drop in the predicted Health Index for the subsequent cycle is small.
 
 #### Rules will be imposed as penalty terms in the loss function
+#### Rule 1
 The first rule is that the predicted health index for subsequent cycles cannot increase (this means that the health of the system cannot improve overtime)
 To enforce this rule into the neural network we add Loss Rule 1 as a penalty term into the loss function. How this loss term works is if the mean health index for cycle i+1 is more than the mean health index for cycle i, this indicates that the health index increases and the term in the bracket will be positive. 
 
@@ -45,6 +46,7 @@ In the event that the mean health index already decreases, the term in the ReLu 
 
 <img src="https://user-images.githubusercontent.com/84385004/192483106-df011385-9b84-4f8f-806c-fffb0780e3be.png" width="500" height="100" />
 
+#### Rule 2
 The second rule is that all the predicted health index for the same cycle should be similar. 
 To enforce this rule into the neural network we add Loss Rule 2 as a penalty term into the loss function
 How this loss term works is that it is equal to the mean absolute percentage error between the health index predictions within a cycle and their average value.
@@ -55,6 +57,7 @@ The optimisation process will attempt to reduce this term until it is close to z
 
 Where t represents the data number within a cycle, n represents the last data set in the cycle.
 
+#### Rule 3
 For the last rule, we want to limit the drop in the health index by 20 percent. 
 In other words, from one cycle to the next, we do not expect the health of the system to degrade too drastically.
 As seen from the inequality formula, if the drop in the mean health index is more than 20 percent, we can bring over the right-hand side term to obtain the following. 
