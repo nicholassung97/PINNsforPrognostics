@@ -6,7 +6,9 @@ Implementation can be accessed here:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/tensorflow2.0.ipynb)
 
 Full Final Year Report can be accessed here:
-![Final Report](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/FYP_B062_NicholasSung.pdf)
+
+
+[![Final Report](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png)](https://github.com/nicholassung97/PINNsforPrognostics/blob/main/FYP_B062_NicholasSung.pdf)
 
 
 ## Methodology
