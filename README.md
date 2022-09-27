@@ -27,11 +27,18 @@ In this project, prediction was achieved through a two-stage modelling process w
 In the first stage, the feature will be used as input into the physics-based machine learning framework to predict the Health Index (HI) of the system. This framework will be the main contribution of this project and it was build using tensorflow 2.0. In the second stage, the health index is mapped to the predicted RUL, after which the final RUL prediction is produced through an ensemble approach
 
 Image of Feature to RUL Prediction
+![image](https://user-images.githubusercontent.com/84385004/192479684-db6e33b7-b2c9-4136-9b6a-7fcf47e7a096.png)
+
 
 ### Physics-Based Machine Learning framework
-This proposed physics-based machine learning model will incorporate knowledge through the following 3 rules of the health index as shown. 
+This proposed physics-based machine learning model will incorporate knowledge through the following 3 rules of the health index:
+Predicted Health Index value for the subsequent cycle cannot increase
+Deviation of the predicted Health Index value within each cycle should be small 
+Drop in the predicted Health Index for the subsequent cycle is small.
+![image](https://user-images.githubusercontent.com/84385004/192479297-64c6a1f6-a327-42cd-b4a5-4ab705842d23.png)
+
 Unlike the kinematics example where the physical laws were imposed by adding a pde residual as penalty into the loss function, 
 The imposition of penalty terms here are more complicated and I will explain them in the next few slides
-![image](https://user-images.githubusercontent.com/84385004/192479064-7c837744-aa21-461a-b5d3-6e3582a3bf3f.png)
+
 
 #### Rule
